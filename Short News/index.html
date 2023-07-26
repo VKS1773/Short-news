@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="container">
+            <h1 class="tittle" onclick="reload()">Short News</h1>
+            <div class="type">
+                <ul>
+                    <li class="nav-itmes" id="IPL" onclick="itemcall('IPL')">IPL</li>
+                    <li class="nav-itmes" id="Finance" onclick="itemcall('Finance')">FINANCE</li>
+                    <li class="nav-itmes" id="Politics" onclick="itemcall('Politics')">POLITICS</li>
+                </ul>
+            </div>
+            <div class="input">
+                <input class="input1" type="text" Placeholder="search" id="in">
+                <button class="search" id="search-button">Search</button>
+            </div>
+        </div>
+        
+    </nav>
+    <main >
+      <div class="news-box" id="news-box">
+     </div>
+    </main> 
+   <template id="template-box-card">
+    <div class="box">
+        <div class="box-header">
+            <img src="https://via.placeholder.com/400x200" alt="News image" id="news-img">
+        </div>
+        <div class="box-content">
+            <h3 id="box-title">This is the Title</h3>
+             <h6 class="news-source" id="box-source">End gadget 26/08/2023</h6>
+             <p class="box-desc" id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellat quia non ipsa, magni in adipisci alias modi dolore tenetur dolores, explicabo fugiat delectus repellendus distinctio aliquam voluptas maiores maxime!</p>
+        </div>
+    </div>
+   </template>
+  <script src="index.js"></script>  
+</body>
+</html>
